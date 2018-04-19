@@ -1,19 +1,37 @@
 <?php
 defined("BASEPATH") OR exit("No direct script access allowed");
-$config["sidebartop"] = '';
-$config["sidebarbottom"] = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Banner demo -->
+$config["sidebartop"] = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Arabibook banner -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-1938129054627089"
-     data-ad-slot="8129382331"
+     data-ad-client="ca-pub-8523467292298026"
+     data-ad-slot="2506533051"
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>';
-$config["sidebarcontent"] = '';
-$config["videoads"] = 'http://www.videoplay.dev/uploads/files/videos/19573835.mp4';
+$config["sidebarbottom"] = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Arabibook banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8523467292298026"
+     data-ad-slot="2506533051"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>';
+$config["sidebarcontent"] = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Arabibook banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8523467292298026"
+     data-ad-slot="2506533051"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>';
+$config["videoads"] = 'http://www.sacoeducation.com/ads/sacoad.mp4';
 $config["videoadsactive"] = '1';
-$config["adsduration"] = '5';
-$config["adslink"] = 'https://www.coffeetheme.com';
+$config["adsduration"] = '10';
+$config["adslink"] = 'http://www.sacohair.com/';
 ?>

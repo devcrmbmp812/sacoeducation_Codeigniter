@@ -215,7 +215,7 @@ class Videos extends CI_Controller
 
     public function uploadFile($id, $type) {
         $config['upload_path']   = './uploads/files/videos/';
-        $config['allowed_types'] = 'mp4|mpeg|mov|ogg|webm';
+        $config['allowed_types'] = 'mp4|mpeg|mov|ogg|webm|flv';
         $config['max_size']      = 500000;
         $this->load->library('upload', $config);
         if(!$this->upload->do_upload('userFile')) {

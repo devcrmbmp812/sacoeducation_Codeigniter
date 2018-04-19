@@ -13,9 +13,7 @@
             <div id="content" class="page-content">
                 <div class="container">
                     <div class="col-sm-8">
-                        <h2><?php echo $this->lang->line('Frequently Asked Questions') ?></h2>
-                        <p><?php echo $this->lang->line('Please check the <a href="'.site_url('page/faqs/').'">Frequently Asked Questions</a> before you submit support form:') ?></p>
-                        <?php if(isset($msg)) echo $msg; ?>
+                                               <?php if(isset($msg)) echo $msg; ?>
                         <form class="form-horizontal" action="<?php echo current_url(); ?>" method="post">
                             <div class="well2">
                                 <div class="form-group">
@@ -72,23 +70,9 @@
                         </form>
                     </div>
                     <div class="col-sm-4">
-                        <div class="panel panel-color panel-inverse">
-							<div class="panel-heading">
-								<h3 class="panel-title font-15"><?php echo $this->config->item('contactBox1Title'); ?></h3>
-							</div>
-							<div class="panel-body">
-								<?php echo $this->config->item('contactBox1'); ?>
-							</div>
-						</div>
-                        <div class="panel panel-color panel-inverse">
-							<div class="panel-heading">
-								<h3 class="panel-title font-15"><?php echo $this->config->item('contactBox2Title'); ?></h3>
-							</div>
-							<div class="panel-body">
-								<?php echo $this->config->item('contactBox2'); ?>
-							</div>
-						</div>
-                    </div>
+	                    <img src="../../../uploads/images/default/video-banner.jpg" width="100%">
+	                    
+                                           </div>
                 </div>
             </div>
 		</div> <!-- end row -->

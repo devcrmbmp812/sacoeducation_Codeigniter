@@ -7,8 +7,25 @@
 	<meta name="description" content="">
 	<meta name="author" content="" />
 	<meta http-equiv="default-style" content="text/css">
-    <!-- Favicon -->
-	<link rel="icon" href="<?php echo site_url('assets/images/favicon.ico'); ?>" type="image/x-icon">
+      <!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/../../assets/icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/../../assets/icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/../../assets/icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/../../assets/icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/../../assets/icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/../../assets/icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/../../assets/icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/../../assets/icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/../../assets/icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/../../assets/icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/../../assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/../../assets/icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/../../assets/icon/favicon-16x16.png">
+<link rel="manifest" href="/../../assets/icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
     <!-- Title -->
 	<title><?php if(isset($title))  echo $title.' - '.$this->config->item('sitename'); ?></title>
 	<!-- Plugins -->
@@ -39,8 +56,8 @@
 	<link href="<?php echo site_url('assets/css/pages.css'); ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo site_url('assets/css/responsive.css'); ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo site_url('assets/css/sweet-alert.css'); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo site_url('assets/css/flags32.css'); ?>" rel="stylesheet" type="text/css">
 
-    <link href="//cloud.github.com/downloads/lafeber/world-flags-sprite/flags32.css" rel="stylesheet" type="text/css" />
 
 	<!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -168,11 +185,7 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="clearfix"></div>
-				<div class="help-box hidden-sm hidden-md hidden-xs">
-                    <h5 class="text-muted m-t-0"><?php echo $this->lang->line('forHelp'); ?></h5>
-                    <p class=""><span class="text-custom"><?php echo $this->lang->line('forum'); ?>:</span> <br/> <a class="link-muted" href="http://www.coffeetheme.com/forums/" target="_blank">www.coffeetheme.com</a></p>
-                    <p class=""><span class="text-custom"><?php echo $this->lang->line('email'); ?>:</span> <br/> support@coffeetheme.com</p>
-                </div>
+				
 			</div>
 		</div> <!-- Left Sidebar End -->
 
@@ -192,10 +205,7 @@
 					<?php if(isset($content)) echo $content; ?>
 				</div> <!-- container -->
 			</div> <!-- content -->
-			<footer class="footer">
-				Coffee Theme © <?php echo date('Y'); ?>. <?php echo $this->lang->line('signature'); ?>
-				<span class="pull-right"><?php echo $this->lang->line('version'); ?> 1.2.0</span>
-			</footer>
+			
 		</div> <!-- end content-page -->
 		<!-- ============================================================== -->
 		<!-- End Right content here -->

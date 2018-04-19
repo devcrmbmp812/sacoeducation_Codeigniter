@@ -678,7 +678,7 @@ a:focus {
   background-color: #5d9cec !important;
 }
 .bg-success {
-  background-color: #81c868 !important;
+  background-color: #d02630 !important;
 }
 .bg-info {
   background-color: #34d3eb !important;
@@ -734,7 +734,7 @@ a:focus {
   color: #ffbd4a;
 }
 .text-success {
-  color: #81c868;
+  color: #d02630;
 }
 .text-info {
   color: #34d3eb;
@@ -825,7 +825,7 @@ textarea.form-control {
   background-color: #5d9cec;
 }
 .label-success {
-  background-color: #81c868;
+  background-color: #d02630;
 }
 .label-info {
   background-color: #34d3eb;
@@ -868,7 +868,7 @@ textarea.form-control {
   background-color: #5d9cec;
 }
 .badge-success {
-  background-color: #81c868;
+  background-color: #d02630;
 }
 .badge-info {
   background-color: #34d3eb;
@@ -1246,7 +1246,7 @@ textarea.form-control {
   color: #5fbeaa;
 }
 .has-success .form-control {
-  border-color: #81c868;
+  border-color: #d02630;
   box-shadow: none !important;
 }
 .has-warning .form-control {
@@ -1404,7 +1404,7 @@ pre {
   text-align: center;
 }
 .front .logo i {
-  color: #68b54d;
+  color: #d02630;
 }
 .logo i {
   color: #ED4F00;
@@ -1531,8 +1531,8 @@ pre {
   border: 2px solid #5d9cec;
 }
 .noti-success {
-  color: #81c868;
-  border: 2px solid #81c868;
+  color: #d02630;
+  border: 2px solid #d02630;
 }
 .noti-info {
   color: #34d3eb;
@@ -1670,7 +1670,7 @@ body.fixed-left .side-menu.left {
   color: #5fbeaa;
 }
 .front #sidebar-menu ul ul a:hover {
-  color: #68b54d;
+  color: #d02630;
 }
 .front.darktheme #sidebar-menu ul ul a:hover {
   color: #de1212;
@@ -1691,8 +1691,8 @@ body.fixed-left .side-menu.left {
 }
 .front #sidebar-menu .subdrop {
   background: #191E23 !important;
-  border-left: 3px solid #68b54d;
-  color: #68b54d !important;
+  border-left: 3px solid #d02630;
+  color: #d02630 !important;
 }
 .front.darktheme #sidebar-menu .subdrop {
   background: #191E23 !important;
@@ -1771,8 +1771,8 @@ body.fixed-left .side-menu.left {
 }
 .front #sidebar-menu > ul > li > a.active {
   background: #191E23 !important;
-  border-left: 3px solid #68b54d;
-  color: #68b54d !important;
+  border-left: 3px solid #d02630;
+  color: #d02630 !important;
 }
 .front.darktheme #sidebar-menu>ul>li>a.active {
   background: #191E23 !important;

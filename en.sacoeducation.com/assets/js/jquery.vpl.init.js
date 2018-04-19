@@ -83,7 +83,7 @@ $(document).ready(function () {
             youtubeColor: "red", //default youtube controls bar color: red, white
             youtubeQuality: "default", //choose youtube quality: "small", "medium", "large", "hd720", "hd1080", "highres", "default"
             youtubeShowRelatedVideos: "Yes", //choose to show youtube related videos when video finish: "Yes", "No" (onFinish:"Stop video" needs to be enabled)
-            videoPlayerShadow: "effect1", //choose player shadow:  "effect1" , "effect2", "effect3", "effect4", "effect5", "effect6", "off"
+            videoPlayerShadow: "effect5", //choose player shadow:  "effect1" , "effect2", "effect3", "effect4", "effect5", "effect6", "off"
             loadRandomVideoOnStart: "No", //choose to load random video when webpage loads: "Yes", "No"
             shuffle: "No", //choose to shuffle videos when playing one after another: "Yes", "No" (shuffle button enabled/disabled on start)
             posterImg: $('#video-player').data('cover'),
@@ -91,11 +91,11 @@ $(document).ready(function () {
             onFinish: "Play next video", //"Play next video","Restart video", "Stop video",
             nowPlayingText: "No", //enable disable now playing title: "Yes","No"
             fullscreen: "Fullscreen native", //choose fullscreen type: "Fullscreen native","Fullscreen browser"
-            preloadSelfHosted: "none", //choose preload buffer for self hosted mp4 videos (video type HTML5): "none", "auto"
+            preloadSelfHosted: "auto", //choose preload buffer for self hosted mp4 videos (video type HTML5): "none", "auto"
             rightClickMenu: false, //enable/disable right click over HTML5 player: true/false
             hideVideoSource: true, //option to hide self hosted video sources (to prevent users from download/steal your videos): true/false
             showAllControls: !isMobile, //enable/disable all HTML5 player controls: true/false
-            allowSkipAd: true, //enable/disable "Skip advertisement" option: true/false
+            allowSkipAd: false, //enable/disable "Skip advertisement" option: true/false
             infoShow: "No", //enable/disable info option: "Yes","No"
             shareShow: "No", //enable/disable all share options: "Yes","No"
             facebookShow: "No", //enable/disable facebook option individually: "Yes","No"

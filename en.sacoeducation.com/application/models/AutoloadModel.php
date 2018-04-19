@@ -61,7 +61,7 @@ class AutoloadModel extends CI_Model
                                             <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.$thisTitle.' <span class="caret"></span></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="'.site_url('Linkswitch/switchLang/english').'" class="dropdown-toggle waves-effect waves-light"><span class="f16"><span class="flag us"></span></span>'.$this->lang->line('English').'</a></li>
-                                                <li><a href="'.site_url('Linkswitch/switchLang/french').'" class="dropdown-toggle waves-effect waves-light"><span class="f16"><span class="flag fr"></span></span>'.$this->lang->line('French').'</a></li>
+                                                <li><a href="http://fr.sacoeducation.com" class="dropdown-toggle waves-effect waves-light"><span class="f16"><span class="flag fr"></span></span>'.$this->lang->line('French').'</a></li>
                                                 <li><a href="'.site_url('Linkswitch/switchLang/spanish').'" class="dropdown-toggle waves-effect waves-light"><span class="f16"><span class="flag es"></span></span>'.$this->lang->line('Spanish').'</a></li>
                                                 <li><a href="'.site_url('Linkswitch/switchLang/swedish').'" class="dropdown-toggle waves-effect waves-light"><span class="f16"><span class="flag se"></span></span>'.$this->lang->line('Swedish').'</a></li>
                                             </ul>

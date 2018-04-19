@@ -1,4 +1,4 @@
-<section id="video">
+<section id="video" oncontextmenu="return false;">
     <div class="row video-player">
         <div class="col-sm-12">
             <div class="player-background" style="background-image: url('<?php if(isset($image)) echo $image; ?>');">
@@ -33,7 +33,7 @@
                                     </div>
                                 <?php } else { ?>
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="video-responsive" src="<?php if(isset($embed)) echo $embed; ?>" width="1140" height="741" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        <iframe class="video-responsive" src="<?php if(isset($embed)) echo $embed; ?>" width="1140" height="741" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
                                     </div>
                                 <?php } ?>
                             <?php } ?>
@@ -176,7 +176,6 @@
 		</div> <!-- end row -->
 	</div> <!-- end container -->
 </section>
-
 <script>
 window.onload = function() {
     setTimeout(function(){
@@ -226,3 +225,4 @@ window.onload = function() {
 	});
 };
 </script>
+

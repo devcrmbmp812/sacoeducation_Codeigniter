@@ -16,7 +16,9 @@
 	<div class="row">
 		<div class="col-sm-12">
             <div id="content" class="page-content container-mobile">
+	            <div class="col-sm-12">
                 <?php if(isset($content)) echo $content; ?>
+	            </div>
             </div>
 		</div> <!-- end row -->
 	</div> <!-- end container -->

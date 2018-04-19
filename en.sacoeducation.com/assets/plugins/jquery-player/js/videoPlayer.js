@@ -36,10 +36,10 @@ var defaults = {
 	onFinish:"Play next video",                  
 	nowPlayingText:"Yes",                        
 	fullscreen:"Fullscreen native",              
-	rightClickMenu:true,                         
+	rightClickMenu:false,                         
 	hideVideoSource:true,						
-	showAllControls:true,						
-	allowSkipAd:true,                           
+	showAllControls:false,						
+	allowSkipAd:false,                           
 	infoShow:"Yes",                              
 	shareShow:"Yes",                             
 	facebookShow:"Yes",                          
@@ -628,7 +628,8 @@ Video.fn.init = function init()
 				if(!this.options.showAllControls)
 					this.controls.hide();
 				
-				this.nowPlayingTitle = $("");
+				this.nowPlayingTitle = $("<div />")
+				.addClass("vpl-title");
 
 				this.controls.addClass("vpl-bg"+" "+this.options.instanceTheme);
 				this.nowPlayingTitle.addClass("vpl-bg"+" "+this.options.instanceTheme);
@@ -967,7 +968,7 @@ Video.fn.resizeAll = function(){
 						else
 							this.qualityBtnWrapper.show();
 					}
-					if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+					if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 						if(this.parent.width()<320)
 							this.downloadBtnLink.hide();
 						else
@@ -1005,7 +1006,7 @@ Video.fn.resizeAll = function(){
 						else
 							this.qualityBtnWrapper.show();
 					}
-					if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+					if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 						if(this.parent.width()<580)
 							this.downloadBtnLink.hide();
 						else
@@ -1055,7 +1056,7 @@ Video.fn.resizeAll = function(){
 						this.rewindBtnWrapper.show();
 						if(this._playlist.videos_array[this._playlist.videoid].videoType=="youtube" || this.options.videoType=="YouTube")
 							this.qualityBtnWrapper.show();
-						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes")
+						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no")
 							this.downloadBtnLink.show();
 						this.unmuteBtnWrapper.show();
 						if(this.parent.width()<470)
@@ -1073,7 +1074,7 @@ Video.fn.resizeAll = function(){
 							else
 								this.qualityBtnWrapper.show();
 						}
-						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 							if(this.parent.width()<410)
 								this.downloadBtnLink.hide();
 							else
@@ -1226,7 +1227,7 @@ Video.fn.resizeAll = function(){
 					else
 						this.qualityBtnWrapper.show();
 				}
-				if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+				if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 					if(this.mainContainer.height()<320)
 						this.downloadBtnLink.hide();
 					else
@@ -1527,7 +1528,7 @@ Video.fn.resizeAll = function(){
 							else
 								this.qualityBtnWrapper.show();
 						}
-						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 							if(self.newPlayerWidth<320)
 								this.downloadBtnLink.hide();
 							else
@@ -1555,7 +1556,7 @@ Video.fn.resizeAll = function(){
 							this.videoTrack.hide();
 						else
 							this.videoTrack.show();
-						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+						if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 							if(self.newPlayerWidth < 584)
 								self.downloadBtnLink.hide();
 							else
@@ -1607,7 +1608,7 @@ Video.fn.resizeAll = function(){
 							
 							this.videoTrack.show();
 							this.timeElapsed.show();
-							if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes")
+							if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no")
 								this.downloadBtnLink.show();
 							this.timeTotal.show();
 							this.volumeTrack.show();
@@ -1630,7 +1631,7 @@ Video.fn.resizeAll = function(){
 								else
 									this.qualityBtnWrapper.show();
 							}
-							if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+							if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 								if(self.newPlayerWidth<410)
 									this.downloadBtnLink.hide();
 								else
@@ -1784,7 +1785,7 @@ Video.fn.resizeAll = function(){
 					else
 						this.qualityBtnWrapper.show();
 				}
-				if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+				if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 					if(self.newPlayerWidth<320)
 						this.downloadBtnLink.hide();
 					else
@@ -1973,7 +1974,7 @@ Video.fn.resizeAll = function(){
 					else
 						this.qualityBtnWrapper.show();
 				}
-				if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes"){
+				if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="no"){
 					if(self.newPlayerWidth<320)
 						this.downloadBtnLink.hide();
 					else
@@ -4290,12 +4291,7 @@ Video.fn.setupButtons = function(){
         .addClass("fa")
         .addClass("icon-general")
 		.addClass("vpl-controlsColor"+" "+this.options.instanceTheme)
-        .addClass("fa-download")
-    this.downloadBtnWrapper.append(this.downloadBtn);//Download BTN
-	if((this._playlist.videos_array[this._playlist.videoid].videoType=="HTML5" || this.options.videoType=="HTML5 (self-hosted)")&&this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes")
-		this.downloadBtnLink.show()
-	// if(this._playlist.videos_array[this._playlist.videoid].enable_mp4_download =="yes")
-		this.controls.append(this.downloadBtnLink)
+       
 	
 
 	if(self.options.shuffle=="Yes"){
@@ -4641,7 +4637,7 @@ Video.fn.setupVideoTrack = function(){
 	if(!this.options.showAllControls)
 		this.progressIdleTrack.hide();
 	this.progressIdleTrack.css({bottom:-6});
-    this.element.append(this.progressIdleTrack);
+    this.element.append();
 	
 	this.progressIdleDownload = $("<div />");
     this.progressIdleDownload.addClass("vpl-progressIdleDownload")
@@ -4740,12 +4736,7 @@ Video.fn.setupVideoTrack = function(){
 				self.toolTip.css("top", self.controls.position().top - self.toolTip.outerHeight() - 2);
 				self.toolTip.show();
 			}
-			else if ($(this).children().hasClass("fa-download")){
-				self.toolTip.text(self.options.downloadVideoBtnTooltipTxt);
-				self.toolTip.css("left", x+$(this).position().left);
-				self.toolTip.css("top", self.controls.position().top - self.toolTip.outerHeight() - 2);
-				self.toolTip.show();
-			}
+			
 			else if ($(this).children().hasClass("fa-cog")){
 				if(self.qualityBtnEnabled)
 					self.toolTip.text(self.options.qualityBtnOpenedTooltipTxt);
@@ -5820,6 +5811,18 @@ Video.fn.setupEvents = function()
 		//play next on finish check
 		if(self.options.onFinish=="Play next video")
 		{
+			// Change title when finish video
+			var title = $(self.nowPlayingTitle[0]).text();
+			var nb = 0;
+			while (nb < self.options.videos.length) {
+				if (self.options.videos[nb].title === title) {
+					var nextID = nb + 1;
+					break;
+				}
+				nb++;
+			}
+			var nextTitle = self.options.videos[nextID].title;
+			$('.video-title h1 b').text(nextTitle);	
 			self._playlist.videoAdPlayed=false;
 			if(self.shuffleBtnEnabled){
 				self.setPlaylistItem(self.randEnd);
@@ -5899,11 +5902,12 @@ Video.fn.setupEvents = function()
 				}
 				this.removeHTML5elements();*/
 			}
-			if(self.shuffleBtnEnabled)
+			if(self.shuffleBtnEnabled) {
 				self.setPlaylistItem(self.randEnd);
-			else
+			}
+			else {
 				self.setPlaylistItem(self._playlist.videoid);
-
+			}
 		}
 		else if(self.options.onFinish=="Restart video")
 		{

@@ -69,6 +69,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
+
+
+function join_table()
+{
+    $this->db->select(//column name, //column name, //column name);
+    $this->db->from(//table1 name);
+    $this->db->join(//table2 name, //table1 name.//column name = //table2 name.//column name');
+    $this->db->where(//condition);
+    return $this->db->get()->result();
+}
+
+
 */
 $active_group = 'default';
 $query_builder = TRUE;
@@ -76,9 +88,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
-	'database' => 'videoplay',
+	'username' => 'suzaid_sacoed_en',
+	'password' => 'sacoed_en',
+	'database' => 'suzaid_sacoed_en',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
